@@ -26,4 +26,10 @@ ln -s /lib/x86_64-linux-gnu/libssl.so.1.0.0 /usr/lib/x86_64-linux-gnu/libssl.so.
 ln -s /usr/lib/x86_64-linux-gnu/libodbcinst.so.2.0.0 /usr/lib/x86_64-linux-gnu/libodbcinst.so.1;
 ln -s /usr/lib/x86_64-linux-gnu/libodbc.so.2.0.0 /usr/lib/x86_64-linux-gnu/libodbc.so.1
 
+# Cleanup
+cd 
+rm -R msodbcsql-11.0.2270.0
+rm msodbcsql-11.0.2270.0.tar.gz
+rm unixodbc_2.3.2-1_amd64.deb
+
 ```
