@@ -33,3 +33,25 @@ rm msodbcsql-11.0.2270.0.tar.gz
 rm unixodbc_2.3.2-1_amd64.deb
 
 ```
+
+Example django settings for django using https://github.com/lionheart/django-pyodbc
+
+```python
+# Example django settings
+
+DATABASES = {
+    'default': {
+        'ENGINE': "django_pyodbc",
+        'HOST': 'tcp:xxxxxx.database.windows.net,1433',
+        'USER': 'testuser@xxxxxx',
+        'PASSWORD': "SecretP#SS",
+        'NAME': 'djangotest',
+        'OPTIONS': {
+            'host_is_server': False,
+            'autocommit': True,
+            'driver': "ODBC Driver 11 for SQL Server"
+        },
+    }
+}
+
+```
